@@ -29,7 +29,19 @@ const horoscponeGen = (month, day) => {
         };
         if(month === 'October' && day >= 24 || month === 'November' && day <= 21){
             return `Your sign is: ${signs[signs.indexOf('Scorpius')]}`;
-        };  
+        };
+        if(month === 'November' && day >= 22 || month === 'December' && day <= 21){
+            return `Your sign is: ${signs[signs.indexOf('Sagittarius')]}`;
+        };
+        if(month === 'December' && day >= 22 || month === 'January' && day <= 19){
+            return `Your sign is: ${signs[signs.indexOf('Capricornus')]}`;
+        };
+        if(month === 'January' && day >= 20 || month === 'February' && day <= 18){
+            return `Your sign is: ${signs[signs.indexOf('Aquarius')]}`;
+        };
+        if(month === 'February' && day >= 19 || month === 'March' && day <= 20){
+            return `Your sign is: ${signs[signs.indexOf('Pisces')]}`;
+        };
 } else {
     return 'Invalid date.'
 }
