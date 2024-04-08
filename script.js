@@ -20,7 +20,16 @@ const horoscponeGen = (month, day) => {
         };
         if(month === 'July' && day >= 23 || month === 'August' && day <= 22){
             return `Your sign is: ${signs[signs.indexOf('Leo')]}`;
-        }         
+        };
+        if(month === 'August' && day >= 23 || month === 'September' && day <= 22){
+            return `Your sign is: ${signs[signs.indexOf('Virgo')]}`;
+        };          
+        if(month === 'September' && day >= 23 || month === 'October' && day <= 23){
+            return `Your sign is: ${signs[signs.indexOf('Libra')]}`;
+        };
+        if(month === 'October' && day >= 24 || month === 'November' && day <= 21){
+            return `Your sign is: ${signs[signs.indexOf('Scorpius')]}`;
+        };  
 } else {
     return 'Invalid date.'
 }
