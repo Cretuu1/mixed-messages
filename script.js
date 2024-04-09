@@ -7,46 +7,57 @@ const horoscponeGen = (month, day) => {
         let pLength = randomP.length - 1;
         let randIndex = Math.floor(Math.random() * pLength);
         if(month === 'March' && day >= 21 || month === 'April' && day <= 19) {
-            return `Your sign is: ${signs[signs.indexOf('Aries')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Aries')]}`);
+            console.log(randomP[randIndex]);
         };
         if(month === 'April' && day >= 20 || month === 'May' && day <= 20){
-            return `Your sign is: ${signs[signs.indexOf('Taurus')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Taurus')]}`);
+            console.log(randomP[randIndex]);
         }; 
         if(month === 'May' && day >= 21 || month === 'June' && day <= 21){
-            return `Your sign is: ${signs[signs.indexOf('Gemini')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Gemini')]}`);
+            console.log(randomP[randIndex]);
         };
         if(month === 'June' && day >= 22 || month === 'July' && day <= 22){
-            return `Your sign is: ${signs[signs.indexOf('Cancer')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Cancer')]}`);
+            console.log(randomP[randIndex]);
         };
         if(month === 'July' && day >= 23 || month === 'August' && day <= 22){
-            return `Your sign is: ${signs[signs.indexOf('Leo')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Leo')]}`);
+            console.log(randomP[randIndex]);
         };
         if(month === 'August' && day >= 23 || month === 'September' && day <= 22){
-            return `Your sign is: ${signs[signs.indexOf('Virgo')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Virgo')]}`);
+            console.log(randomP[randIndex]);
         };          
         if(month === 'September' && day >= 23 || month === 'October' && day <= 23){
-            return `Your sign is: ${signs[signs.indexOf('Libra')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Libra')]}`);
+            console.log(randomP[randIndex]);
         };
         if(month === 'October' && day >= 24 || month === 'November' && day <= 21){
-            return `Your sign is: ${signs[signs.indexOf('Scorpius')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Scorpius')]}`);
+            console.log(randomP[randIndex]);
         };
         if(month === 'November' && day >= 22 || month === 'December' && day <= 21){
-            return `Your sign is: ${signs[signs.indexOf('Sagittarius')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Sagittarius')]}`);
+            console.log(randomP[randIndex]);
         };
         if(month === 'December' && day >= 22 || month === 'January' && day <= 19){
-            return `Your sign is: ${signs[signs.indexOf('Capricornus')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Capricornus')]}`);
+            console.log(randomP[randIndex]);
         };
         if(month === 'January' && day >= 20 || month === 'February' && day <= 18){
-            return `Your sign is: ${signs[signs.indexOf('Aquarius')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Aquarius')]}`);
+            console.log(randomP[randIndex]);
         };
         if(month === 'February' && day >= 19 || month === 'March' && day <= 20){
-            return `Your sign is: ${signs[signs.indexOf('Pisces')]}`;
+            console.log(`Your sign is: ${signs[signs.indexOf('Pisces')]}`);
+            console.log(randomP[randIndex]);
         };
+        
 } else {
     return 'Invalid date.'
 }
 }
 
 console.log(horoscponeGen('August', 22))
-
-//return `${randomP[randIndex]}`
